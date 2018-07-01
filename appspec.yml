@@ -14,9 +14,7 @@ permissions:
        - file
 hooks:
    BeforeInstall:
-   - location: Scripts/installapache.sh
-     runas: root
-   - location: Scripts/startapache.sh
+   - location: Scripts/deploy.sh
      runas: root
    AfterInstall:
    - location: Scripts/restartapache.sh
