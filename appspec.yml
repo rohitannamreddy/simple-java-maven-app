@@ -26,8 +26,8 @@ permissions:
 
 hooks:
    BeforeInstall:
-   - location: /tmp/myapp/Scripts/deploy.sh
+   - location: Scripts/deploy.sh
      runas: root
    AfterInstall:
-   - location: /tmp/myapp/Scripts/runjar.sh
+   - location: Scripts/runjar.sh
      runas: root
