@@ -3,19 +3,31 @@ version: 0.0
 os: linux
 files:
    - source: /
-     destination: /tmp/myapp-new/
+     destination: /tmp/myapp
 permissions:
-   - object: /tmp/myapp-new
+   - object: /tmp/myapp
      pattern: "**"
      owner: root
      group: root
      mode: 755
      type:
        - directory
+files:
+   - source: target/my-app-1.0-SNAPSHOT.jar.jar
+     destination: /myapp/my-app-1.0-SNAPSHOT.jar
+permissions:
+   - object: /myapp/my-app-1.0-SNAPSHOT.jar
+     pattern: "**"
+     owner: root
+     group: root
+     mode: 755
+     type:
+       - file
+
 hooks:
    BeforeInstall:
-   - location: /tmp/myapp-new/Scripts/deploy.sh
+   - location: /tmp/myapp/Scripts/deploy.sh
      runas: root
    AfterInstall:
-   - location: /tmp/myapp-new/Scripts/runjar.sh
+   - location: /tmp/myapp/Scripts/runjar.sh
      runas: root
