@@ -5,17 +5,17 @@ files:
    - source: /
      destination: /tmp/myapp-new/
 permissions:
-   - object: /myapp/my-app-1.0-SNAPSHOT.jar
+   - object: /tmp/myapp-new
      pattern: "**"
      owner: root
      group: root
      mode: 755
      type:
-       - file
+       - directory
 hooks:
    BeforeInstall:
-   - location: Scripts/deploy.sh
+   - location: /tmp/myapp-new/Scripts/deploy.sh
      runas: root
    AfterInstall:
-   - location: Scripts/runjar.sh
+   - location: /tmp/myapp-new/Scripts/runjar.sh
      runas: root
