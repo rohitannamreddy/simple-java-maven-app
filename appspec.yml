@@ -2,7 +2,7 @@ version: 0.0
 
 os: linux
 files:
-   - source: /target/my-app-1.0-SNAPSHOT.jar
+   - source: ./target/my-app-1.0-SNAPSHOT.jar
      destination: /myapp/my-app-1.0-SNAPSHOT.jar
 permissions:
    - object: /myapp/my-app-1.0-SNAPSHOT.jar
