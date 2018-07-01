@@ -17,5 +17,5 @@ hooks:
    - location: Scripts/deploy.sh
      runas: root
    AfterInstall:
-   - location: Scripts/restartapache.sh
+   - location: Scripts/runjar.sh
      runas: root
