@@ -13,7 +13,7 @@ permissions:
      type:
        - directory
 files:
-   - source: target/my-app-1.0-SNAPSHOT.jar.jar
+   - source: target/my-app-1.0-SNAPSHOT.jar
      destination: /myapp/my-app-1.0-SNAPSHOT.jar
 permissions:
    - object: /myapp/my-app-1.0-SNAPSHOT.jar
