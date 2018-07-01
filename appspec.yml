@@ -11,17 +11,6 @@ permissions:
      group: root
      mode: 755
      type:
-       - directory
-files:
-   - source: /target/my-app-1.0-SNAPSHOT.jar
-     destination: /myapp/my-app-1.0-SNAPSHOT.jar
-permissions:
-   - object: /myapp/my-app-1.0-SNAPSHOT.jar
-     pattern: "**"
-     owner: root
-     group: root
-     mode: 755
-     type:
        - file
 
 hooks:
