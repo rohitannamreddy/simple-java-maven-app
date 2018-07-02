@@ -1,2 +1,2 @@
 # simple-java-maven-app
-Contents of read me file.
+Contents of read me file for the latest update.
